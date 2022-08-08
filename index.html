@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyek SDL</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pairing Heap</h1>
+    </div>
+    <div style="text-align: center;">
+        <div class="vis">
+            <button id="btnNext" class="btn">Next</button>
+            <button id='btnIns' class='btn btn-option'>Insert</button>
+            <button id='btnExt' class='btn btn-option'>Extract</button>
+            <button id='btnDec' class='btn btn-option'>Decrease</button>
+            <button id="btnClr" class='btn btn-option'>Clear</button>
+            <button id="btnSav" class='btn btn-option'>Save</button>
+        </div>
+        
+    </div>
+    <canvas id=main-canvas width="1000" height="600"></canvas>
+    <div id="history-container">
+        <div class="history-content">
+            <div class="history-text-state" style='text-align: center;'>Click Panel to zoom in/out</div>
+        </div>
+        <div class="history-button" onclick="$('.history-content').slideToggle()">
+            <div class="history-text">
+                History
+            </div>
+        </div>
+    </div>
+    <script src="pairingheap.js"></script>
+    <script src="canvas.js"></script>
+    <script src="index.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
